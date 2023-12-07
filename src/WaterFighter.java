@@ -40,10 +40,11 @@ public class WaterFighter {
 
     public WatergunCard playCard() {
         // ToDo: Remove and return the first card on the deck. (before starting remove "return null;")
-        int firstCardIndex=cardsIndex-1;
-        WatergunCard firstCard = cards[firstCardIndex];
-        cards[firstCardIndex]=null;
-        cardsIndex=firstCardIndex;
+
+        int firstCardIndex=cardsIndex-1; // index of the card at the top of the deck
+        WatergunCard firstCard = cards[firstCardIndex]; // card to be played
+        cards[firstCardIndex]=null; // remove card from deck
+        cardsIndex=firstCardIndex; // update index for the next card
 
         return firstCard ;
     }
