@@ -5,7 +5,7 @@ public class WaterFighter {
     /**
      *  The name of the fighter
      */
-    public String name;
+    private String name;
     /**
      * The arrays that contains the cards of the fighter
      */
